@@ -1,5 +1,5 @@
 html, body {
-    background-color: #fff;
+    background-color: #32518A;
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
@@ -33,6 +33,7 @@ html, body {
 
 .title {
     font-size: 84px;
+    color: #DF7931;
 }
 .titl {
     color: #636b6f;
@@ -57,7 +58,6 @@ html, body {
     font-size: 16px;
     padding: 8px 15px;
     background-color: white;
-    color: black;
     border: 2px solid #b7b7b7;
     text-align: center;
     display: inline-block;
@@ -65,7 +65,7 @@ html, body {
     cursor: pointer;
 }
 .btn:hover {
-    background-color: #e7e7e7;
+    background-color: #DF7931;
 }
 .m-b-md {
     margin-bottom: 30px;
@@ -79,4 +79,16 @@ html, body {
     text-align:left;
     margin-right:-4px;
     text-align: center;
+    box-sizing: border-box;
+
+}
+.pan{
+    border-top: solid .5rem ;
+    border-color: orange;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+}
+.naveg{
+    border: 1px solid grey;
+    background-color: white;
 }

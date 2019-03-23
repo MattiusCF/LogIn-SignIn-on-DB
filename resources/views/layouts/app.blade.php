@@ -8,14 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Dragones') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top" style="background-color: #DF7931; border-bottom: 2px solid grey; ">
             <div class="container">
                 <div class="navbar-header">
 
@@ -28,8 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a style="color: #666666" class="navbar-brand titl" href="{{ url('/') }}">Inicio
                     </a>
                 </div>
 
@@ -40,13 +39,13 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul style="border-radius: .5em; background-color: #b7b7b7" class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a style="border-top-left-radius: .5em; border-bottom-left-radius: .5em;" class="naveg" href="{{ route('login') }}">Entrar</a></li>
+                            <li><a style="border-top-right-radius: .5em; border-bottom-right-radius: .5em;" class="naveg" href="{{ route('register') }}">Registrar</a></li>
                         @else
-                            <li class="dropdown">
+                            <li style="border: 1px solid grey; background-color: white; border-radius: .5em" class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>

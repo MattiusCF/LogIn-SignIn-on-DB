@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row row-centered">
         <div class="col-md-5 col-centered">
-            <div class="panel panel-default">
+            <div class="panel panel-default pan">
                 <div class="panel-heading"><p class="titl">Crear usuario</p></div>
 
                 <div class="panel-body">
@@ -14,7 +14,7 @@
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre Completo." required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="&#x1F482;  Nombre Completo." required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -26,7 +26,7 @@
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Correo electrónico." required>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#x1F4E7; Correo electrónico." required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -38,7 +38,7 @@
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="&#x1F512;  Contraseña" required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -50,7 +50,7 @@
 
                         <div class="form-group">
                             <div class="col-md-12">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar contraseña." required>
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="&#x1F512;  Confirmar contraseña." required>
                             </div>
                         </div>
 
