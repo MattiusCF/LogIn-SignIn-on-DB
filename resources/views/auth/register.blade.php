@@ -37,10 +37,10 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('gen') ? ' has-error' : '' }}">
-                            <label for="gen" class="col-md-4 col-form-label text-md-right">Género</label>
-                            <div class="col-md-12">
-                                <input type="Radio" name="gen" value="Masculino" required>Masculino
-                                <input type="Radio" name="gen" value="Femenino" required>Femenino
+                            <label for="gen" class="col-md-2 col-form-label text-md-left">Género</label>
+                            <div class="col-md-6">
+                                <input type="Radio" name="gen" value="Masculino" required>Masculino &nbsp
+                                <input type="Radio" name="gen" value="Femenino" required>Femenino &nbsp
                                 @if ($errors->has('gen'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('gen') }}</strong>
