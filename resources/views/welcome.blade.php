@@ -26,6 +26,7 @@
                     @else
                         <a class="btn" href="{{ url('/login') }}">Entrar</a>
                         <a class="btn" href="{{ url('/register') }}">Registrarte</a>
+                        <a class="btn" href="{{ url('/planilla') }}">tabla</a>
                     @endif
                 </div>
                 @endif

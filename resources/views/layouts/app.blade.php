@@ -43,6 +43,7 @@
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a style="border-top-left-radius: .5em; border-bottom-left-radius: .5em;" class="naveg" href="{{ route('login') }}">Entrar</a></li>
+                            
                             <li><a style="border-top-right-radius: .5em; border-bottom-right-radius: .5em;" class="naveg" href="{{ route('register') }}">Registrar</a></li>
                         @else
                             <li style="border: 1px solid grey; background-color: white; border-radius: .5em" class="dropdown">
