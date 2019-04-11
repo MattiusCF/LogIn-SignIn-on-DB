@@ -18,7 +18,7 @@
 	<!-- Contenedores para toda la página -->
 	<div class="contenedor" >
 		<div class="row center-block" style="height: 97%">
-			<!-- Columna izquierda correspondiente al equipo 1 y a sus estadisticas -->
+			<!-- algun comentario -->
 			<div class="col-sm-3 col-xs-3 col-lg-3 col-md-3 neon">
 				<div class="col-sm-12 logotipo neon">Nombre del equipo y logo</div>
 				<div class="col-sm-12 neon" style="text-align: center; height: 10%"><h1><b>Jugadores</b></h1></div>
