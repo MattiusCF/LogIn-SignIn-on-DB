@@ -6,7 +6,7 @@
     <div class="row row-centered">
         <div class="col-md-5 col-centered">
             <div class="panel panel-default pan">
-                <div class="panel-heading"><p class="titl">Crear usuario</p></div>
+                <div class="panel-heading"><p class="titl">Jugador</p></div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -14,11 +14,25 @@
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="&#x1F482;  Nombre Completo." required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="&#x1F482;  Nombre Completo" required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('tipodoc') ? ' has-error' : '' }}">
+                            <label for="tipodoc" class="col-md-2 col-form-label text-md-left">Tipo Documento</label>
+                            <div class="col-md-6">
+                                <input type="Radio" name="tipodoc" value="Cedula" required>CC &nbsp
+                                <input type="Radio" name="tipodoc" value="Tarjeta" required>TI &nbsp
+                                <input type="Radio" name="tipodoc" value="Pasaporte" required>Pasaporte &nbsp
+                                @if ($errors->has('tipodoc'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('tipodoc') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -36,14 +50,25 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('gen') ? ' has-error' : '' }}">
-                            <label for="gen" class="col-md-2 col-form-label text-md-left">Género</label>
-                            <div class="col-md-6">
-                                <input type="Radio" name="gen" value="Masculino" required>Masculino &nbsp
-                                <input type="Radio" name="gen" value="Femenino" required>Femenino &nbsp
-                                @if ($errors->has('gen'))
+                        <div class="form-group{{ $errors->has('fecha') ? ' has-error' : '' }}">
+                            <div class="col-md-12">
+                                <input id="fecha" type="text" class="form-control" name="fecha" value="{{ old('fecha') }}" placeholder="&#x1F4C6;  Fecha de nacimiento dd/mm/aa." required>
+
+                                @if ($errors->has('fecha'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('gen') }}</strong>
+                                        <strong>{{ $errors->first('fecha') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('rh') ? ' has-error' : '' }}">
+                            <div class="col-md-12">
+                                <input id="rh" type="text" class="form-control" name="rh" value="{{ old('rh') }}" placeholder="&#x1F489;  RH" required>
+
+                                @if ($errors->has('rh'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('rh') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -61,21 +86,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('ciu') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="ciu" type="text" class="form-control" name="ciu" value="{{ old('ciu') }}" placeholder="&#x1F3D9;&#xFE0F;  Ciudad de residencia." required>
-
-                                @if ($errors->has('ciu'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('ciu') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('tel') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="tel" type="text" class="form-control" name="tel" value="{{ old('tel') }}" placeholder="&#x1F4DE;  Número de telefono fijo o celular." required>
+                                <input id="tel" type="text" class="form-control" name="tel" value="{{ old('tel') }}" placeholder="&#x1F4DE;  Número celular del acudiente/profesor." required>
 
                                 @if ($errors->has('tel'))
                                     <span class="help-block">
@@ -97,28 +110,10 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="password" type="password" class="form-control" name="password" placeholder="&#x1F512;  Contraseña" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="&#x1F512;  Confirmar contraseña." required>
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-4">
                                 <button type="submit" class="btn">
-                                    Registrar
+                                    Guardar
                                 </button>
                             </div>
                         </div>

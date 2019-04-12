@@ -19,6 +19,22 @@ Route::get('planilla', function () {
     return view('/table/planilla');
 });
 
+Route::get('admin', function () {
+    return view('/auth/admin');
+});
+
+Route::get('planillero', function () {
+    return view('/auth/planillero');
+});
+
+Route::get('coordinador', function () {
+    return view('/auth/coordinador');
+});
+
+Route::get('jugador', function () {
+    return view('/auth/jugador');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
