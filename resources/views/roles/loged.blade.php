@@ -76,13 +76,31 @@
 				<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 margen" style="height: 60%">
 					@if (Auth::guest()==false)
 						@if (Auth::user()->admin==1)
-							<button>1</button>
-							<button>2</button>
-							<button>3</button>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Club</button>
+							</div>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Coordinador</button>
+							</div>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Jugador</button>
+							</div>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Planillero</button>
+							</div>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Torneo</button>
+							</div>
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Historial</button>
+							</div>
 						@else
-							<button>4</button>
-							<button>5</button>
-							<button>6</button>
+						@endif
+						@if (Auth::user()->admin==0)
+							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
+								<button style="height: 100%; width: 100%">Club</button>
+							</div>
+						@else
 						@endif
 					@endif
 				</div>
