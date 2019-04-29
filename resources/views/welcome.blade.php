@@ -23,14 +23,14 @@
                 <div class="links ">
                     @if (Auth::check())
                         <a class="btn" href="{{ url('/home') }}">Inicio</a>
-                    @else
-                        <a class="btn" href="{{ url('/login') }}">Entrar</a>
-                        <a class="btn" href="{{ url('/register') }}">Registrarte</a>
                         <a class="btn" href="{{ url('/planilla') }}">tabla</a>
                         <a class="btn" href="{{ url('/admin') }}">Administrador</a>
                         <a class="btn" href="{{ url('/planillero') }}">Planillero</a>
                         <a class="btn" href="{{ url('/coordinador') }}">Coordinador Club</a>
                         <a class="btn" href="{{ url('/jugador') }}">Jugador</a>
+                    @else
+                        <a class="btn" href="{{ url('/login') }}">Entrar</a>
+                        <a class="btn" href="{{ url('/register') }}">Registrarte</a>
                     @endif
                 </div>
                 @endif

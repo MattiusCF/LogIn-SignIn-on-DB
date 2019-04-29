@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@if(Auth::check() && Auth::user()->admin==1)
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
 <div class="container">
     <div class="row row-centered">
@@ -69,7 +70,7 @@
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-4">
                                 <button type="submit" class="btn">
-                                    Entrar
+                                    Registrar
                                 </button>
                             </div>
                         </div>
@@ -79,4 +80,7 @@
         </div>
     </div>
 </div>
+@else
+    <meta http-equiv="refresh" content="0.001; url=http://lsdb.test/">
+@endif
 @endsection

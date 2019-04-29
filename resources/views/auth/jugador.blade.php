@@ -27,8 +27,8 @@
                         <div class="form-group{{ $errors->has('tipodoc') ? ' has-error' : '' }}">
                             <label for="tipodoc" class="col-md-2 col-form-label text-md-left">Tipo Documento</label>
                             <div class="col-md-6">
-                                <input type="Radio" name="tipodoc" value="Cedula" required>CC &nbsp
-                                <input type="Radio" name="tipodoc" value="Tarjeta" required>TI &nbsp
+                                <input type="Radio" name="tipodoc" value="CC" required>CC &nbsp
+                                <input type="Radio" name="tipodoc" value="TI" required>TI &nbsp
                                 <input type="Radio" name="tipodoc" value="Pasaporte" required>Pasaporte &nbsp
                                 @if ($errors->has('tipodoc'))
                                     <span class="help-block">
@@ -49,10 +49,10 @@
                                 @endif
                             </div>
                         </div>
-
+                        
                         <div class="form-group{{ $errors->has('fecha') ? ' has-error' : '' }}">
                             <div class="col-md-12">
-                                <input id="fecha" type="text" class="form-control" name="fecha" value="{{ old('fecha') }}" placeholder="&#x1F4C6;  Fecha de nacimiento dd/mm/aa." required>
+                                <input id="fecha" type="text" class="form-control" name="fecha" value="{{ old('fecha') }}" placeholder="&#x1F4C6;  Fecha de nacimiento dd/mm/aaaa." required>
 
                                 @if ($errors->has('fecha'))
                                     <span class="help-block">

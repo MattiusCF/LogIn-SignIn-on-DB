@@ -11,34 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
 
-Route::get('planilla', function () {
-    return view('/layouts/app');
-});
+Route::get('planilla', function () {return view('/layouts/app');});
 
-Route::get('loged', function(){
-	return view('/roles/loged');
-});
+Route::get('home', function(){return view('/roles/loged');});
 
-Route::get('admin', function () {
-    return view('/auth/admin');
-});
+Route::get('admin', function () {return view('/auth/admin');});
 
-Route::get('planillero', function () {
-    return view('/auth/planillero');
-});
+Route::get('planillero', function () {return view('/auth/planillero');});
 
-Route::get('coordinador', function () {
-    return view('/auth/coordinador');
-});
+Route::get('coordinador', function () {return view('/auth/coordinador');});
 
-Route::get('jugador', function () {
-    return view('/auth/jugador');
-});
+Route::get('jugador', function () {return view('/auth/jugador');});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');

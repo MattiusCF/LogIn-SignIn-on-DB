@@ -80,13 +80,13 @@
 								<button style="height: 100%; width: 100%">Club</button>
 							</div>
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
-								<button style="height: 100%; width: 100%">Coordinador</button>
+								<a class="btn" href="{{ url('/coordinador') }}">Coordinador</a>
 							</div>
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
-								<button style="height: 100%; width: 100%">Jugador</button>
+                        		<a class="btn" href="{{ url('/jugador') }}">Jugador</a>
 							</div>
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
-								<button style="height: 100%; width: 100%">Planillero</button>
+                        		<a class="btn" href="{{ url('/planillero') }}">Planillero</a>
 							</div>
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
 								<button style="height: 100%; width: 100%">Torneo</button>
