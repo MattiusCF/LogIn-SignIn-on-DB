@@ -66,15 +66,15 @@
 				<div class="row" style="height: 70%">
 					<div class="row" style="height: 90%"></div>
 					<div class="row" style="height: 10%">
-						<div class="col-md-3"></div>
-						<div class="col-md-2" style="height: 100%">
+						<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3"></div>
+						<div class="col-md-2 col-sm-2 col-lg-2 col-xs-2" style="height: 100%">
 							<button type="button" class="btn btn-info grande">Play</button>
 						</div>
-						<div class="col-md-2"></div>
-						<div class="col-md-2" style="height: 100%">
+						<div class="col-md-2 col-sm-2 col-lg-2 col-xs-2"></div>
+						<div class="col-md-2 col-sm-2 col-lg-2 col-xs-2" style="height: 100%">
 							<button type="button" class="btn btn-info grande">Stop</button>
 						</div>
-						<div class="col-md-3"></div>
+						<div class="col-md-3 col-sm-3 col-lg-3 col-xs-3"></div>
 					</div>
 				</div>
 			</div>

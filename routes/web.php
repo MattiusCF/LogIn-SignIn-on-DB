@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('planilla', function () {
-    return view('/table/planilla');
+    return view('/layouts/app');
+});
+
+Route::get('loged', function(){
+	return view('/roles/loged');
 });
 
 Route::get('admin', function () {
