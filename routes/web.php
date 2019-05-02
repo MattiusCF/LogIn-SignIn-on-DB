@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {return view('welcome');});
+Route::get('/', function () {return view('/roles/loged');});
+Route::get('/welcome', function () {return view('welcome');});
 
 Route::get('planilla', function () {return view('/layouts/app');});
 

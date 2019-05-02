@@ -75,7 +75,7 @@
 			<div class="row" style="height: 10%; background-color: black">
 				<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 margen" style="height: 60%">
 					@if (Auth::guest()==false)
-						@if (Auth::user()->admin==1)
+						@if (Auth::user()->rol==1)
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
 								<button style="height: 100%; width: 100%">Club</button>
 							</div>
@@ -96,7 +96,7 @@
 							</div>
 						@else
 						@endif
-						@if (Auth::user()->admin==0)
+						@if (Auth::user()->rol==0)
 							<div class="col-sm-2 col-xs-2 col-lg-2 col-md-2" style="height: 100%">
 								<button style="height: 100%; width: 100%">Club</button>
 							</div>

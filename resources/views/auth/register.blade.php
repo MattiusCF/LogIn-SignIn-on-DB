@@ -35,56 +35,7 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group{{ $errors->has('gen') ? ' has-error' : '' }}">
-                            <label for="gen" class="col-md-2 col-form-label text-md-left">Género</label>
-                            <div class="col-md-6">
-                                <input type="Radio" name="gen" value="Masculino" required>Masculino &nbsp
-                                <input type="Radio" name="gen" value="Femenino" required>Femenino &nbsp
-                                @if ($errors->has('gen'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('gen') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('eps') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="eps" type="text" class="form-control" name="eps" value="{{ old('eps') }}" placeholder="&#x1F489;  Seguridad o EPS" required>
-
-                                @if ($errors->has('eps'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('eps') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('ciu') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="ciu" type="text" class="form-control" name="ciu" value="{{ old('ciu') }}" placeholder="&#x1F3D9;&#xFE0F;  Ciudad de residencia." required>
-
-                                @if ($errors->has('ciu'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('ciu') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('tel') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="tel" type="text" class="form-control" name="tel" value="{{ old('tel') }}" placeholder="&#x1F4DE;  Número de telefono fijo o celular." required>
-
-                                @if ($errors->has('tel'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('tel') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
+                        
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <div class="col-md-12">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#x1F4E7; Correo electrónico." required>

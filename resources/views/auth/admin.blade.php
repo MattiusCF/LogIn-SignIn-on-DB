@@ -6,7 +6,7 @@
     <div class="row row-centered">
         <div class="col-md-5 col-centered">
             <div class="panel panel-default pan">
-                <div class="panel-heading"><p class="titl">Administrador</p></div>
+                <div class="panel-heading"><p class="titl">Crtear Administrador</p></div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -66,10 +66,12 @@
                             </div>
                         </div>
 
+                        <input type="text" name="rol" value="1" DISABLED style="visibility:hidden">
+
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-4">
                                 <button type="submit" class="btn">
-                                    Entrar
+                                    Registrar
                                 </button>
                             </div>
                         </div>
