@@ -16,7 +16,7 @@ class User extends Authenticatable
      */
     protected $table='users';
     protected $fillable = [
-        'name','doc', 'gen', 'eps','ciu', 'tel', 'email', 'password',
+        'name','doc','email','password','rol'
     ];
 
     /**
@@ -27,4 +27,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function club(){
+        return $this->belongsTo(club::class);
+    }
 }

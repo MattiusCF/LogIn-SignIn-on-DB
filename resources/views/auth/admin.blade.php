@@ -1,15 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+@if(Auth::user()->rol==1)
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
 <div class="container">
     <div class="row row-centered">
         <div class="col-md-5 col-centered">
             <div class="panel panel-default pan">
-                <div class="panel-heading"><p class="titl">Crear usuario</p></div>
+                <div class="panel-heading"><p class="titl">Crtear Administrador</p></div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="/authAdm">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -35,7 +36,7 @@
                                 @endif
                             </div>
                         </div>
-                        
+
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <div class="col-md-12">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#x1F4E7; Correo electrónico." required>
@@ -79,4 +80,5 @@
         </div>
     </div>
 </div>
+@endif
 @endsection
