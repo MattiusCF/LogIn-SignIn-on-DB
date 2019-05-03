@@ -9,7 +9,7 @@
                 <div class="panel-heading"><p class="titl">Crtear Administrador</p></div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="/authAdm">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -65,8 +65,6 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="&#x1F512;  Confirmar contraseña." required>
                             </div>
                         </div>
-
-                        <input type="text" name="rol" value="1" DISABLED style="visibility:hidden">
 
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-4">

@@ -12,6 +12,14 @@
 */
 
 Route::get('/', function () {return view('/roles/loged');});
+/*Route::get('/', function(){
+	return (LogIn\coord::findOrFail(1))->club;
+	
+	$club = LogIn\club::findOrFail(1);
+	return $club->coord;
+});*/
+
+
 Route::get('/welcome', function () {return view('welcome');});
 
 Route::get('planilla', function () {return view('/layouts/app');});
@@ -25,6 +33,16 @@ Route::get('planillero', function () {return view('/auth/planillero');});
 Route::get('coordinador', function () {return view('/auth/coordinador');});
 
 Route::get('jugador', function () {return view('/auth/jugador');});
+
+Route::post('/authAdm', 'adminController@guardarAdm');
+
+Route::post('/authCoo', 'adminController@guardarCoo');
+
+Route::post('/authPla', 'adminController@guardarPla');
+
+Route::post('/authClub','ClubController@guardar');
+
+Route::post('/authJug', 'jugadorController@guardar');
 
 Auth::routes();
 

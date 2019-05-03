@@ -9,8 +9,9 @@
                 <div class="panel-heading"><p class="titl">Jugador</p></div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="/authJug">
                         {{ csrf_field() }}
+                        <input type="text" name="club" style="display: none" value="{{(LogIn\coord::findOrFail(Auth::user()->id))->club->id}}">
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <div class="col-md-12">
@@ -98,22 +99,10 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <div class="col-md-12">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="&#x1F4E7; Correo electrónico." required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <div class="col-md-12 col-md-offset-4">
                                 <button type="submit" class="btn">
-                                    Guardar
+                                    Registrar
                                 </button>
                             </div>
                         </div>
