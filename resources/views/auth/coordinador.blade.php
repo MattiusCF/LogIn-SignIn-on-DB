@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@if(Auth::user()->rol==1)
+@if(!Auth::guest() && Auth::user()->rol==1)
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
 <div class="container">
     <div class="row row-centered">
@@ -81,6 +81,6 @@
     </div>
 </div>
 @else
-    <meta http-equiv="refresh" content="0.001; url=http://lsdb.test/">
+    <meta http-equiv="refresh" content="0.001; url=/">
 @endif
 @endsection

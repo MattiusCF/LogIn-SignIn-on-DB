@@ -69,6 +69,7 @@
 								<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12" style="height: 10%; background-color: white"></div>
 								<div class="col-sm-12 col-xs-12 col-lg-12 col-md-12" style="height: 90%">
 									<!-- Aquí se debe poner el código que muestre los clubes registrados en la web -->
+									@if(!Auth::guest() && !((LogIn\coord::findOrFail(Auth::user()->id))->club==null))
 									@if(!Auth::guest() && Auth::user()->rol==0)
 									<div class="row" style="height: 100%">
 										<strong>
@@ -96,6 +97,7 @@
 											Clubes
 										</div>
 										</strong>
+									@endif
 									@endif
 								</div>
 							</div>
