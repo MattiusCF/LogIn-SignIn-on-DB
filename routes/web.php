@@ -12,13 +12,6 @@
 */
 
 Route::get('/', function () {return view('/roles/loged');});
-/*Route::get('/', function(){
-	return (LogIn\coord::findOrFail(1))->club;
-	
-	$club = LogIn\club::findOrFail(1);
-	return $club->coord;
-});*/
-
 
 Route::get('/welcome', function () {return view('welcome');});
 

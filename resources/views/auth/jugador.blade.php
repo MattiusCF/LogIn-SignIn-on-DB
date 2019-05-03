@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@if(Auth::user()->rol==0 || Auth::user()->rol==1)
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
 <div class="container">
     <div class="row row-centered">
@@ -112,4 +113,5 @@
         </div>
     </div>
 </div>
+@endif
 @endsection
