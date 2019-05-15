@@ -81,6 +81,6 @@
     </div>
 </div>
 @else
-    <meta http-equiv="refresh" content="0.001; url=http://lsdb.test/">
+    <meta http-equiv="refresh" content="0.001; url=/home">
 @endif
 @endsection

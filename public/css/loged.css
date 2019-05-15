@@ -8,8 +8,9 @@ html, body {
 }
 .contenedor{
 	height: 99%;
-	width: 97%;
+	width: 95%;
 	background-color: #b1becc;
+    margin: 0 auto;
 }
 .margen{
 	border: solid;
@@ -18,14 +19,11 @@ html, body {
 .btn {
     color: black;
     font-weight: 600;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
+    border-radius: 0.5vw;
+    font-size: 1.6vw;
     background-color: white;
-    border: 2px solid #b7b7b7;
+    border: 0.2vw solid #b7b7b7;
     text-align: center;
-    display: inline-block;
     cursor: pointer;
     height: 100%;
     width: 100%;
