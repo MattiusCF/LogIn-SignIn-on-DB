@@ -35,6 +35,8 @@ Route::post('/authPla', 'adminController@guardarPla');
 
 Route::post('/authClub','ClubController@guardar');
 
+Route::post('/authTorn','TorneoController@guardar');
+
 Route::post('/authJug', 'jugadorController@guardar');
 
 Auth::routes();

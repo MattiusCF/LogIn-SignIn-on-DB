@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-@if(!Auth::guest() && Auth::user()->rol==1)
+@if(Auth::user()->rol==1)
+@if(!Auth::guest())
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
 <div class="container">
     <div class="row row-centered">
@@ -82,5 +83,8 @@
 </div>
 @else
     <meta http-equiv="refresh" content="0.001; url=/">
+@endif
+@else
+    <meta http-equiv="refresh" content="0.001; url=/home">
 @endif
 @endsection
